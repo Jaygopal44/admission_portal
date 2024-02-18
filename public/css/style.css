@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* login page css */
+.register_logo{
+    height: 95px;
+    border-radius: 80px;
+    margin: auto;
+}
+
+.regs_heading{
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #10212a;
+    font-size: 30px;
+}
+
+.input_label{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+
+/* Dashboard Css */
+
+.button:hover {
+    background-color: aqua;
+}
+
+.course_en:hover{
+    background-color: rgb(235, 235, 114);
+    /* transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06); */
+}
+
+.a {
+    /* background: #010404ad; */
+    background: gray;
+}
+
+.nav-link {
+    margin: 11px;
+}
+
+.web-logo {
+    /* width: 200px; */
+   width: 5%;
+   border-radius: 40px;
+}
+
+/* .text-center {
+    margin-top: -370px;
+    font-size: 80px;
+    color: white;
+    font-family: inherit;
+
+} */
+
+.fiddle {
+    padding: 30px 0px 30px 0px;
+    color: black;
+    font-size: 45px;
+}
+
+.banner-content {
+    line-height: 35px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.aboutimage {
+    width: 75%;
+}
+
+.image {
+    /* background-image: url('https://firstfiddle.in/assets/images/outletbanner.png'); */
+    background-image: url('https://www.firstfiddle.in/assets/images/bannerabout.jpg');
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+
+.byte {
+    /* padding: 60px 200px 0px 200px; */
+    line-height: 48px;
+}
+
+.image1 {
+    background-image: url('../css/image/11.jpg');
+    padding-bottom: 125px;
+    padding-top: 110px;
+    background-size: cover;
+}
+
+.mainfooter {
+    background: black;
+    padding: 35px 0px 35px 0px;
+}
+
+/* .banner{
+   background-image: url('https://app.firstfiddle.in/images/brand-banner/lotd.jpeg');
+   padding-top: 700px;
+} */
+
+.mobile-logo {
+    display: none;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+/* .carousel-caption {
+    font-size: 50px;
+    padding-bottom: 300px;
+} */
+
+
+.mark {
+    /* border: 2px solid; */
+    width: 100%;
+    background: #040e65;
+    height: 55px;
+    color: white;
+    line-height: 40px;
+    font-weight: bold;
+
+}
+
+.button {
+    width: 150px;
+    border-radius: 25px;
+    text-align: center;
+    height: 45px;
+    line-height: 35px;
+    border: none;
+}
+
+.card {
+    border: aliceblue;
+
+}
+.embed-responsive{
+    padding: 100px;
+}
+.image1 {
+    background-image: url('../image/11.jpg');
+    padding-bottom: 125px;
+    padding-top: 110px;
+    background-size: cover;
+}
+
+.contact {
+    padding-top: 85px;
+    padding-bottom: 50px;
+
+}
+
+.contact p {
+    padding-top: 25px;
+
+
+}
+
+.bg-img {
+
+    padding-top: 150px;
+    background-image: url('../image/slide01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+    /* position: fixed; */
+
+}
+
+.bg-img1 {
+
+    padding-top: 200px;
+    background-image: url('../image/slide02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* position: fixed; */
+
+}
+
+.image2 {
+    background-image: url('../image/slide01.jpg');
+    padding-bottom: 45px;
+    padding-top: 110px;
+    background-size: cover;
+}
+
+
+
+.form1 {
+    padding: 0px 120px 0 120px;
+}
+
+.bg-img2 {
+
+    padding-top: 150px;
+    background-image: url('../image/slide01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* position: fixed; */
+
+}
+
+.bg-grad{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(to bottom, gray 27%, white 10%);
+}
+
+.header-about {
+    width: 100%;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 42px;
+}
+
+.section-about {
+    padding: 50px 0;
+}
+
+@media(max-width: 800px) {
+    .web-logo {
+         /* width: 200px; */
+        width: 13%;
+        border-radius: 40px;
+    }
+
+    .header-about{
+        width: 100%;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 18px;
+    }
+
+    .section-about {
+        padding: 35px 15px 15px 15px;
+    }
+
+    .banner-image {
+        margin-top: 54px;
+    }
+
+    
+
+    .form1{
+         display: contents;
+
+    }
+    /* .carousel-item{
+        height: auto;
+        width: 100%;
+    } */
+
+    /* .web-logo {
+         display: none;
+    }
+
+    .a {
+         background: #fbaa1a;
+    }
+
+    .mobile-btn {
+         display: block;
+    }
+
+    .web-btn {
+         display: none;
+    } */
+}
+
+
+/* Login css */
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+}

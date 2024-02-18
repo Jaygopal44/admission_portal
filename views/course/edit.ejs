@@ -1,0 +1,109 @@
+<%-include('../header.ejs')%>
+
+    <br><br><br><br><br><br><br>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                   <h1>Course Edit</h1>
+                   <form action="/courseUpdate/<%=data._id %>"
+                   method="post">
+                   <div class="form-group">
+                       <label for>USER NAME:</label>
+                       <input type="text" value="<%= data.name %>"
+                           name="name"
+                           class="form-control">
+                   </div>
+                   <div class="form-group">
+                       <label for>E-mail:</label>
+                       <input type="email" value="<%= data.email %>"
+                           name="email"
+                           class="form-control">
+                   </div>
+                   <div class="form-group">
+                       <label for>Mobile Number</label>
+                       <input type="number" value="<%= data.mobile %>"
+                           name="number"
+                           class="form-control">
+                   </div>
+                   <div class="form-group">
+                       <label for>Address</label>
+                       <textarea name="address"
+                           class="form-control"><%= data.address %></textarea>
+                   </div>
+                   <div class="form-group col-sm-12">
+                       <label
+                           for="exampleInputEmail1">Gender</label>
+                       <br>
+                       <input type="radio" id
+                           name="gender" value="male" <%= data.gender=='male'?'checked':'' %>
+                           required> Male <br>
+
+                       <input type="radio" id
+                           name="gender"
+                           value="female" <%= data.gender=='female'?'checked':'' %> required>
+                       Female
+                   </div>
+
+                   <div class="form-group">
+                       <label for>College:</label>
+                       <select name="college" id
+                           class="form-control">
+                           <option value>
+                               select college
+                           </option>
+                           <option <%= data.college=='Tulas'?'selected':'' %>
+                               value="Tulas">Tulas</option>
+                           <option <%= data.college=='MIT'?'selected':'' %>
+                               value="MIT">MIt</option>
+                           <option <%= data.college=='RJIT'?'selected':'' %>
+                               value="RJIT">RJIT</option>
+                           <option <%= data.college=='DIT'?'selected':'' %>
+                               value="DIT">DIT</option>
+                           <option <%= data.college=='Others'?'selected':'' %>
+                               value="Others">Others</option>
+                       </select>
+                   </div>
+                   <div class="form-group">
+                       <label for>Course:</label>
+                       <select name="course" id
+                           class="form-control">
+                           <option value>
+                               select
+                           </option>
+                           <option <%= data.course=='Btech'?'selected':'' %>
+                               value="Btech">B.tech</option>
+                       </select>
+                   </div>
+                   <div class="form-group">
+                       <label for>Branch:</label>
+                       <select name="branch" id
+                           class="form-control">
+                           <option value>
+                               select Branch
+                           </option>
+                           <option <%= data.branch=='CSE'?'selected':'' %>
+                               value="CSE">CSE</option>
+                           <option <%= data.branch=='IT'?'selected':'' %>
+                               value="IT">It</option>
+                           <option <%= data.branch=='ME'?'selected':'' %>
+                               value="ME">ME</option>
+                           <option <%= data.branch=='CIVIL'?'selected':'' %>
+                               value="CIVIL">Civil</option>
+                           <option <%= data.branch=='Others'?'selected':'' %>
+                               value="Others">Others</option>
+                       </select>
+                   </div>
+
+                   <button type="submit"
+                       class="btn btn-info">Submit</button>
+               </form>
+                </div>
+                <div class="col-md-4"></div>
+
+            </div>
+        </div>
+    </div>
+
+<%-include('../footer.ejs')%>

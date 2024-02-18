@@ -1,0 +1,54 @@
+<%- include('../header.ejs') %>
+
+<br><br><br><br><br><br><br>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 ">
+
+            <table class="table table-bordered table-hover table-responsive">
+                <thead class="table-dark">
+                    <th class="text-center" colspan="7">Registered User</th>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Contact</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Comment</th>
+                        <th scope="col">Action</th>
+
+                    </tr>
+                </thead>
+
+                <% d.forEach((c)=>{ %>
+                <tbody>
+                    <tr>
+                        <td><%= c._id %></td>
+                        <td><%= c.name %></td>
+                        <td><%= c.email %></td>
+                        <td><%= c.mobile %></td>
+                        <td><%= c.status %></td>
+                        <td><%= c.comment %></td>
+
+                        <td><a class="btn btn-info"
+                                href="/courseview/<%= c._id %>">View</a>
+                            <a class="btn btn-secondary"
+                                href="/courseedit/<%= c._id %>">Edit</a>
+                            <!-- <a class="btn btn-danger" href="/userdelete/<%= c._id %>">Delete</a> -->
+                        </td>
+
+                    </tr>
+                </tbody>
+                <% }) %>
+
+            </table>
+        </div>
+        <div class="col-md-2"></div>
+
+    </div>
+
+</div>
+
+<%- include('../footer.ejs') %>

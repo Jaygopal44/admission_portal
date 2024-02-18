@@ -1,0 +1,63 @@
+<%- include('./header.ejs') %>
+
+<br><br><br><br>
+<div class="container-fluid">
+   
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+
+                <table class="table table-responsive">
+                    <thead class="table-dark table-active">
+                        <th class="text-center" colspan="7">Registered User</th>
+                        <tr>
+                            <th scope="col">User ID</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Mobile Number</th>
+                            <th scope="col">Comment</th>
+                            <th scope="col">Status</th>
+                            
+                            <th colspan="2">Action</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody class="table-bordered table-hover">
+                        <% i = 1%>
+                        <% c.forEach((course)=>{ %>
+                        <tr>
+                            <td><%= i++ %></td>
+                            <td><%= course.name %></td>
+                            <td><%= course.email %></td>
+                            <td><%= course.mobile %></td>
+                            <!-- <td><%= course.status %></td> -->
+                            <td>
+                                <form action="/update_approve/<%= course._id %>" method="post">
+                                    <textarea name="comment"></textarea>
+                            </td>
+                            <td>
+                                <button class="btn btn-info" type="submit" name="status" value="approved">Approved</button>
+                                <button class="btn btn-danger" type="submit" name="status" value="rejected">Rejected</button>
+                            </from>
+                            </td>
+
+                            <td><a class="btn btn-info"
+                                    href="/adminview/<%= course._id %>">View</a>
+                                <!-- <a class="btn btn-secondary"
+                                    href="/courseedit/<%= course._id %>">Edit</a> -->
+                                <a class="btn btn-danger"
+                                    href="/delete/<%= course._id %>">Delete</a>
+                            </td>
+
+                        </tr>
+                        <% }) %>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-2"></div>
+
+        </div>
+</div>
+
+<%- include('./footer.ejs') %>
