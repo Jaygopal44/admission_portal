@@ -1,11 +1,11 @@
 const express = require('express')
-const UserController = require('../Controllers/UserController')
-const FrontendController = require('../Controllers/FrontendController')
-const CourseController = require('../Controllers/CourseController')
+const UserController = require('../controllers/UserController')
+const FrontendController = require('../controllers/FrontendController')
+const CourseController = require('../controllers/CourseController')
 const router = express.Router()
 const checkuserauth = require('../middleware/auth')
 const isLogin = require('../middleware/islogin')
-const AdminController = require('../Controllers/admin/AdminController')
+const AdminController = require('../controllers/admin/AdminController')
 
 
 
