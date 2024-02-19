@@ -22,10 +22,11 @@
                     </tr>
                 </thead>
 
+                <% var i=1 %>
                 <% d.forEach((c)=>{ %>
                 <tbody>
                     <tr>
-                        <td><%= c._id %></td>
+                        <td><%= i++ %></td>
                         <td><%= c.name %></td>
                         <td><%= c.email %></td>
                         <td><%= c.mobile %></td>
